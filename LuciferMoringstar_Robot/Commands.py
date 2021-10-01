@@ -49,7 +49,7 @@ async def start(bot, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                                InlineKeyboardButton("Join Channel", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}")
@@ -87,7 +87,7 @@ async def start(bot, message):
                         InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
                     ],
                     [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('Search again', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -106,7 +106,7 @@ async def start(bot, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                        InlineKeyboardButton("Join Channel", url=invite_link.invite_link)
                     ]
                 ]
             )
